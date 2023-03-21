@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import "borderColorAnimation.css";
+
+.button-container {
+    padding: 2em;
+    border: 6px double;
+    border-radius: 20px;
+    animation: 3s ease-in-out infinite border-color-animation;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-container .bootstrap-button {
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bootstrap-profile-container {
+    margin-top: 2em;
+    max-width: 20em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bootstrap-profile-container * {
+    font-family: 'Raleway', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/*
+.button-container .button {
+    border: none;
+    border-radius: 10px;
+    background: crimson;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    outline: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container .button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #580718;
 }
+
+.profile-container {
+    margin-top: 2em;
+    padding: 2em;
+    border: 1px dotted;
+    border-radius: 20px;
+    animation: 3s ease-in-out infinite border-color-animation;
+}
+
+.profile-container * {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.profile-container img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
+}
+*/

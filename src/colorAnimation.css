@@ -1,0 +1,11 @@
+@keyframes color-animation {
+    0% {
+        color: #333399;
+    }
+    50% {
+        color: #ff00cc;
+    }
+    100% {
+        color: #333399;
+    }
+}

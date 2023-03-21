@@ -1,0 +1,11 @@
+@keyframes border-color-animation {
+    0% {
+        border-color: #333399;
+    }
+    50% {
+        border-color: #ff00cc;
+    }
+    100% {
+        border-color: #333399;
+    }
+}
