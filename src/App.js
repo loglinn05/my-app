@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Card } from 'react-bootstrap';
+import UrlForm from './UrlForm';
 import './App.css';
 import axios from 'axios';
 
@@ -29,8 +30,9 @@ class App extends Component {
                 login: '',
                 name: '',
                 bio: ''
-            }
-        }
+            },
+            url: ''
+        };
         this.handleClick = this.handleClick.bind(this);
     }
     render () {
@@ -61,7 +63,10 @@ class App extends Component {
         return (
             <main>
                 <div className="button-container">
-                    <Button variant="outline-danger" className="bootstrap-button" onClick={this.handleClick}>Push me!</Button>
+                    <Button variant="outline-danger"
+                            className="bootstrap-button mb-5"
+                            onClick={this.handleClick}>Push me!</Button>
+                    <UrlForm />
                 </div>
                 {this.state.isLoaded && profile_container}
             </main>

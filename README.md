@@ -1,5 +1,5 @@
 # My little React application
-Nothing especial. Just my lab assignment.
+Nothing especial. Just my lab assignment: a "hello-world"-type React SPA.
 
 ## Launch guide
 1. Clone the repo into any folder you want.
